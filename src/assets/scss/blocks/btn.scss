@@ -1,0 +1,10 @@
+.btn {
+  display: block;
+  background-color: $secondary-darken;
+  border-radius: 10px;
+  line-height: 117%;
+  transition: all .2s linear;
+  &:hover {
+    background-color: $secondary;
+  }
+}

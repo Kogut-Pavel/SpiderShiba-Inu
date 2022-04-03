@@ -1,0 +1,21 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 117%;
+    opacity: 0.8;
+    transition: all .2s linear;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 2.5rem;
+  }
+}
