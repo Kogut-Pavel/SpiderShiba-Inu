@@ -629,8 +629,9 @@ a {
 }
 
 .web {
-    min-height: 1500px;
-    background: url("../images/bg/world-web.png") no-repeat center/cover;
+    position: relative;
+    min-height: 950px;
+    background: url("../images/bg/world-web.svg") no-repeat center/cover;
     padding-top: 5rem;
 }
 
@@ -649,6 +650,154 @@ a {
     font-weight: 600;
     font-size: 2.2rem;
     margin-top: 218px;
+}
+
+.web__img {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.web__img-blue {
+    top: 172px;
+    right: 536px;
+}
+
+.web__img-red {
+    top: 406px;
+    left: 565px;
+}
+
+.web__img-yellow {
+    bottom: 135px;
+    right: 713px;
+}
+
+.pulse {
+    height: 38px;
+    width: 38px;
+    background-color: #00cc78;
+    border-radius: 100%;
+    position: absolute;
+    left: -29px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .75;
+    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.pulse:after,
+.pulse:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    background-color: #00cc78;
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.pulse:before {
+    margin: auto 0 auto -32.5px;
+    height: 65px;
+    width: 65px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.pulse:after {
+    margin: auto 0 auto -46px;
+    height: 92px;
+    width: 92px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 .partners {
