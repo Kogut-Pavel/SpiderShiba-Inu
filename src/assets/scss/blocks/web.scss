@@ -1,0 +1,42 @@
+.web {
+  position: relative;
+  min-height: 950px;
+  background: url("../images/bg/world-web.svg") no-repeat center / cover;
+
+  padding-top: 5rem;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 571px;
+    margin: 116px auto 0 auto;
+    font-size: 3.5rem;
+  }
+
+  &__btn {
+    padding: 1rem 4.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-top: 218px;
+  }
+
+  &__img {
+    position: absolute;
+    border-radius: 50%;
+
+    &-blue {
+      top: 172px;
+      right: 536px;
+    }
+    &-red {
+      top: 406px;
+      left: 565px;
+    }
+    &-yellow {
+      bottom: 135px;
+      right: 713px;
+    }
+  }
+}

@@ -472,7 +472,7 @@ a {
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     background-color: #AC1216;
     border-radius: 10px;
     line-height: 117%;
@@ -626,4 +626,50 @@ a {
 
 .contract-address:hover .contract-address__value {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.web {
+    min-height: 1500px;
+    background: url("../images/bg/world-web.png") no-repeat center/cover;
+    padding-top: 5rem;
+}
+
+.web__wrapper {
+    text-align: center;
+}
+
+.web__title {
+    max-width: 571px;
+    margin: 116px auto 0 auto;
+    font-size: 3.5rem;
+}
+
+.web__btn {
+    padding: 1rem 4.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-top: 218px;
+}
+
+.partners {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.partners__link {
+    margin: 0 5px;
+}
+
+.partners__img {
+    border-radius: 50px;
+    opacity: 0.3;
+    transition: all .2s ease-in;
+}
+
+.partners__img:hover {
+    opacity: 1;
 }

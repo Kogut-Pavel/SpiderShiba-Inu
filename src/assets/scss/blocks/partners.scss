@@ -1,0 +1,17 @@
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__link {
+    margin: 0 5px;
+  }
+
+  &__img {
+    border-radius: 50px;
+    opacity: 0.3;
+    transition: all .2s ease-in;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
