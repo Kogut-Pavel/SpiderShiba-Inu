@@ -28,6 +28,7 @@ a {
 
 .container {
     max-width: 1760px;
+    height: 100%;
     margin: 0 auto;
     padding: 0 1.2rem;
     &_small {
@@ -47,3 +48,5 @@ a {
 @import "blocks/contractAddress";
 @import "blocks/web";
 @import "blocks/partners";
+@import "blocks/about";
+@import "blocks/card";
