@@ -1,0 +1,90 @@
+.earn {
+  padding: 5rem 0 17.5rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    line-height: 168%;
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 5rem;
+    padding: 3.5rem 5rem;
+    background-color: #071022;
+    border-radius: 3rem;
+    gap: 4rem;
+  }
+
+  &__top-img {
+    img {
+      width: 100%;
+      border-radius: 3rem;
+    }
+  }
+
+  &__top-text {
+    max-width: 946px;
+  }
+
+  &__top-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 120%;
+    opacity: 0.6;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__card {
+    display: flex;
+    gap: 3rem;
+    padding: 3.8rem 3.8rem 3.8rem 3rem;
+    border-radius: 3rem;
+
+    &_yellow {
+      background-color: #FF9429;;
+    }
+    &_blue {
+      background-color: #067CCB;;
+    }
+  }
+
+  &__card-img {
+    max-height: 160px;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__card-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__card-text {
+    font-size: 2.8rem;
+    opacity: 0.8;
+    line-height: 120%;
+  }
+}

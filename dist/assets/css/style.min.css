@@ -414,8 +414,7 @@ a {
 .title {
   font-weight: 700;
   font-size: 5rem;
-  line-height: 120%;
-  text-align: center; }
+  line-height: 120%; }
 
 .hero {
   position: relative;
@@ -682,3 +681,61 @@ a {
     opacity: 0.7;
     line-height: 120%;
     margin-top: 3rem; }
+
+.earn {
+  padding: 5rem 0 17.5rem 0; }
+  .earn__title {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .earn__subtitle {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    line-height: 168%;
+    text-align: center;
+    opacity: 0.5; }
+  .earn__top {
+    display: flex;
+    margin-bottom: 5rem;
+    padding: 3.5rem 5rem;
+    background-color: #071022;
+    border-radius: 3rem;
+    gap: 4rem; }
+  .earn__top-img img {
+    width: 100%;
+    border-radius: 3rem; }
+  .earn__top-text {
+    max-width: 946px; }
+  .earn__top-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 2rem; }
+  .earn__text {
+    font-size: 24px;
+    line-height: 120%;
+    opacity: 0.6; }
+  .earn__text:not(:last-child) {
+    margin-bottom: 2rem; }
+  .earn__bottom {
+    display: flex;
+    gap: 4rem; }
+  .earn__card {
+    display: flex;
+    gap: 3rem;
+    padding: 3.8rem 3.8rem 3.8rem 3rem;
+    border-radius: 3rem; }
+    .earn__card_yellow {
+      background-color: #FF9429; }
+    .earn__card_blue {
+      background-color: #067CCB; }
+  .earn__card-img {
+    max-height: 160px; }
+    .earn__card-img img {
+      height: 100%; }
+  .earn__card-title {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .earn__card-text {
+    font-size: 2.8rem;
+    opacity: 0.8;
+    line-height: 120%; }
