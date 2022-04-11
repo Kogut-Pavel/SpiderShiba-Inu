@@ -478,6 +478,7 @@ a {
     border-radius: 10px;
     line-height: 117%;
     transition: all .2s linear;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -932,6 +933,9 @@ a {
 .why {
     padding: 145px 0;
     background-color: #30298C;
+    background-image: url("../images/decor/why-web.png");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
 }
 
 .why__wrapper {
@@ -966,6 +970,7 @@ a {
 
 .why-right {
     max-width: 996px;
+    padding-left: 128px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -980,16 +985,20 @@ a {
 }
 
 .why-card:before {
-    content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -128px;
     width: 107px;
     height: 107px;
 }
 
-.why-card_trend {
-    background-image: url("../assets/images/icons/why-trend.svg");
+.why-card_trend:before {
+    content: url("../images/icons/why-trend.svg");
+}
+
+.why-card_star:before {
+    content: url("../images/icons/why-star.svg");
+    left: -154px;
 }
 
 .why-card__title {
@@ -1003,4 +1012,149 @@ a {
     font-size: 3.2rem;
     line-height: 120%;
     opacity: 0.8;
+}
+
+.roadmap {
+    padding: 7rem 0 13rem 0;
+}
+
+.container_timeline {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.roadmap__title {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.timeline {
+    width: 100%;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.roadmap__item {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.roadmap__item:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: #384D70;
+    }
+
+    .roadmap__item {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .roadmap__item:nth-child(odd) {
+        float: left;
+        clear: right;
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .roadmap__item:nth-child(even) {
+        float: right;
+        clear: left;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .roadmap__item::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .roadmap__item:nth-child(odd)::before {
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+        right: -30px;
+    }
+
+    .roadmap__item:nth-child(even)::before {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        left: -30px;
+    }
+
+    .roadmap__item:hover::before {
+        background-color: red;
+    }
+}
+
+.timeline-card {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3.5rem 3rem;
+    background: rgba(56, 77, 112, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    max-width: 792px;
+}
+
+.timeline-card__number {
+    max-height: 14.5rem;
+    margin-right: 5rem;
+    padding: 3.5rem 5rem;
+    background: #384D70;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 120%;
+    opacity: 0.5;
+}
+
+.timeline-card__content {
+    opacity: 0.7;
+}
+
+.timeline-card__content time {
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 120%;
+}
+
+.timeline-card__content li {
+    list-style-type: disc;
+    font-size: 2.5rem;
+    line-height: 1;
 }
