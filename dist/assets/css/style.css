@@ -488,7 +488,6 @@ a {
     font-weight: 700;
     font-size: 5rem;
     line-height: 120%;
-    text-align: center;
 }
 
 .hero {
@@ -834,4 +833,174 @@ a {
     opacity: 0.7;
     line-height: 120%;
     margin-top: 3rem;
+}
+
+.earn {
+    padding: 5rem 0 17.5rem 0;
+}
+
+.earn__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.earn__subtitle {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    line-height: 168%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.earn__top {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5rem;
+    padding: 3.5rem 5rem;
+    background-color: #071022;
+    border-radius: 3rem;
+    gap: 4rem;
+}
+
+.earn__top-img img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.earn__top-text {
+    max-width: 946px;
+}
+
+.earn__top-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 2rem;
+}
+
+.earn__text {
+    font-size: 24px;
+    line-height: 120%;
+    opacity: 0.6;
+}
+
+.earn__text:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.earn__bottom {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
+}
+
+.earn__card {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+    padding: 3.8rem 3.8rem 3.8rem 3rem;
+    border-radius: 3rem;
+}
+
+.earn__card_yellow {
+    background-color: #FF9429;
+}
+
+.earn__card_blue {
+    background-color: #067CCB;
+}
+
+.earn__card-img {
+    max-height: 160px;
+}
+
+.earn__card-img img {
+    height: 100%;
+}
+
+.earn__card-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.earn__card-text {
+    font-size: 2.8rem;
+    opacity: 0.8;
+    line-height: 120%;
+}
+
+.why {
+    padding: 145px 0;
+    background-color: #30298C;
+}
+
+.why__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 188px;
+}
+
+.why__title {
+    margin-bottom: 2rem;
+}
+
+.why__btn {
+    padding: 2.5rem 3rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.why-left {
+    max-width: 552px;
+}
+
+.why-left__descr {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.why-right {
+    max-width: 996px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.why-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.why-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 107px;
+    height: 107px;
+}
+
+.why-card_trend {
+    background-image: url("../assets/images/icons/why-trend.svg");
+}
+
+.why-card__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+.why-card__descr {
+    font-size: 3.2rem;
+    line-height: 120%;
+    opacity: 0.8;
 }

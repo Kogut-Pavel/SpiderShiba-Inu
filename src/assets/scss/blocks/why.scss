@@ -1,0 +1,80 @@
+.why {
+  padding: 145px 0;
+  background-color: #30298C;
+  background-image: url("../images/decor/why-web.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 188px;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    padding: 2.5rem 3rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+}
+
+.why-left {
+  max-width: 552px;
+
+  &__descr {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    opacity: 0.6;
+  }
+}
+
+.why-right {
+  max-width: 996px;
+  padding-left: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.why-card {
+  position: relative;
+  display: flex;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -128px;
+    width: 107px;
+    height: 107px;
+  }
+
+  &_trend {
+    &:before {
+      content: url('../images/icons/why-trend.svg');
+    }
+  }
+  &_star {
+    &:before {
+      content: url('../images/icons/why-star.svg');
+      left: -154px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+  }
+
+  &__descr {
+    font-size: 3.2rem;
+    line-height: 120%;
+    opacity: 0.8;
+  }
+}
+
